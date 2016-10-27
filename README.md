@@ -10,6 +10,9 @@ The following non-mandatory options can be passed to the Docker image:
 - `PASSWORD`: The password for accessing the frontend
 - `ZK_DEFAULT_NODE`: The default node address, i.e. `192.168.0.100:2181/`
 
+**Write access**  
+If you want to have write access to your ZooKeeper nodes, you have to set the `USER` and `PASSWORD` environment variables!
+
 ## Running
 The image can be run either via Mesos Marathon, or directly on the Docker host.
 
