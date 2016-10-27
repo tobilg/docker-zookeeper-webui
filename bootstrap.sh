@@ -16,7 +16,7 @@ fi
 
 # Check for ZK_DEFAULT_NODE parameter
 if [ -n "$ZK_DEFAULT_NODE" ]; then
-  echo " :default-node ${ZK_DEFAULT_NODE}" >> $CONFIG_FILE
+  echo " :default-node \"${ZK_DEFAULT_NODE}\"" >> $CONFIG_FILE
 fi
 
 echo "}" >> $CONFIG_FILE
